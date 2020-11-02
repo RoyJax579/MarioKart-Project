@@ -1,0 +1,60 @@
+.sky{
+    background: linear-gradient(to right, rgb(0, 132, 255), rgb(0, 204, 255), rgba(0, 204, 255, 0.466));
+    height: 30vh;
+    width: 100%;
+    position: relative;
+}
+
+.cloud, .cloud2, .cloud3, .cloud4, .plane1, .plane2{
+    position: absolute;
+    width: 200px;
+}
+
+.cloud{
+    top: 60px;
+    animation: wind 100s 3s linear infinite both;
+}
+
+.cloud2{
+    top: 40px;
+    width: 150px;
+    animation: wind 50s 1s linear infinite both;
+    opacity: 0.8;
+}
+
+.cloud3{
+    top: 20px;
+    width: 20px;
+    animation: wind 80s 7s linear infinite both;
+    opacity: 0.6;
+}
+
+.cloud4{
+    top: 50px;
+    width: 300px;
+    height: 100px;
+    animation: wind 31s 5s ease-in infinite both;
+    opacity: 0.9;
+}
+
+.plane1{
+    top: 0px;
+    height: 80px;
+    width: 100px;
+    animation: wind 20s linear infinite both;
+}
+
+.plane2{
+    width: 200px;
+    animation: wind 20s 3s ease-in-out infinite both reverse;
+}
+
+@keyframes wind {
+    from{
+        left: -500px
+    }
+
+    to{
+        left: 100%;
+    }
+}

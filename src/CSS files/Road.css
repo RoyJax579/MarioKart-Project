@@ -1,0 +1,42 @@
+.road{
+    background-color: rgb(77, 76, 76);
+    height: 40vh;
+    border-top: 20px solid gray;
+    border-bottom: 20px solid gray;
+}
+
+.lane1, .lane2{
+    
+    height: 50%;
+    position: relative;
+}
+
+.lane1{
+    border-bottom: 10px dashed white;
+}
+
+.mario{
+    position: absolute;
+    width: 200px;
+    z-index: 10;
+    top: -50px;
+    animation: drive 10s linear 1s infinite both;
+}
+
+.racer{
+    position: absolute;
+    width: 300px;
+    z-index: 10;
+    top: -50px;
+    animation: drive 11s linear 0.9s infinite both;
+}
+
+@keyframes drive {
+    from{
+        left: -500px;
+    }
+
+    to{
+        left: 100%;
+    }
+}
